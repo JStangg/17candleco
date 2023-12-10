@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>17 Candle Co.</title>
+        <link rel="icon" type="image/x-icon" href="images/17.png">
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="header">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img id="logo" src="images/17.png" alt="17 Candle Company Logo">
+                    <h1>Seventeen Candle Company</h1>
+                    <h2>PURE SOY WAX</h2>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script>
+            /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+ 
+    </body>
+</html>

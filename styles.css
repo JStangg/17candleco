@@ -5,52 +5,64 @@ body {
     font-family: 'playfair', serif;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background: url(images/menu.png);
-    color: white;
-    font-size: 8px;
-    border: 1px solid #e3e3e3;
-    cursor: pointer;
-    height: 72px;
-    width: 72px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 72px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+nav {
+  height: 144px;
+  width: auto;
+  display: flex;
+  border: 1px solid #c4c4c4;
 
-#logo {
-    width: 72px;
-    height: 72px;
 }
 
 .logo {
-    display: flex;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #c4c4c4;
+}
+
+#logo {
+  /* sets logo size */
+  height: 72px;
+  width: auto;
+  margin-left: 36px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+  margin-right: 48px;
+}
+
+.heading h1, .heading h2 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.heading h2 {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-left, .card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 50px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.card-text {
+  font-size: 18px;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.img {
+  width: 500px;
+  height: auto;
+  box-shadow: 0px 0px 10px #797979;
 }
